@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from bs4 import BeautifulSoup
 import requests
+import openpyxl
 from time import sleep
 from random import randint
 import time
