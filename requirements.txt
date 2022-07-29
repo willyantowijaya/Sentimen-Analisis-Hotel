@@ -16,4 +16,4 @@ stqdm==0.0.4
 streamlit==1.11.1
 streamlit-aggrid==0.2.3.post2
 tqdm==4.64.0
-openpyxl=3.0.10
+openpyxl==3.0.10
