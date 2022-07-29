@@ -65,7 +65,7 @@ def main():
                     req = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'})
                     html = req.content
                     # Put it in soup
-                    # sleep(randint(1, 2))
+                    sleep(randint(1, 2))
                     soup = BeautifulSoup(html, 'html.parser')
                     # for loop to extract Customer Names
                     for a in soup.find_all('a', {'class':'ui_header_link uyyBf'}):
