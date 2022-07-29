@@ -46,9 +46,6 @@ def preprocessing(text):
 df_list = pd.read_excel('Hotel_List.xlsx')
 model = pickle.load(open('model1.pkl', 'rb'))
 
-
-url_split = df_list[df_list['nama']==nama_hotel]['link'][0].split('-')
-
 def main():
     st.title('Search Hotel Sentiment')
     nama_hotel = st.selectbox('Enter hotel name: ', df_list)
