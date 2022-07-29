@@ -247,7 +247,7 @@ for page in pages:
     # for loop to extract Reviews
     for a in soup.find_all('q', {'class':'XllAv H4 _a'}):
         Review.append(a.get_text())
-    for a in soup.findAll('div',{'class':'bcaHz'}):
+    for a in soup.findAll('div',{'class':'cRVSd'}):
         Dates.append(a.span.text.strip()) 
         
 for i in range(len(Dates)):
@@ -359,7 +359,7 @@ if nama_hotel:
         for a in soup.find_all('q', {'class': 'XllAv H4 _a'}):
             Review.append(a.get_text())
         # for loop to extract Dates
-        for a in soup.findAll('div', {'class': 'bcaHz'}):
+        for a in soup.findAll('div', {'class': 'cRVSd'}):
             Dates.append(a.span.text.strip())
 
     for i in range(len(Dates)):
