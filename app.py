@@ -44,7 +44,7 @@ def preprocessing(text):
     return ' '.join([slang[slang['before'] == word]['after'].values[0] if (slang["before"] == word).any() else word for word in text.split()])
 
 df_list = pd.read_excel('Hotel_List.xlsx')
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('model1.pkl', 'rb'))
 
 
 def main():
@@ -62,7 +62,7 @@ def main():
 
                 for page in stqdm(pages,desc="Scraping"):
                     url = '-'.join([url_split[0], url_split[1], url_split[2], url_split[3], f'or{page}', url_split[4], url_split[5]])    # import the Url details to Python
-                    req = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
+                    req = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'})
                     html = req.content
                     # Put it in soup
                     # sleep(randint(1, 2))
