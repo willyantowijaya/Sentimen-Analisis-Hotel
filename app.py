@@ -18,6 +18,7 @@ from Sastrawi.Stemmer.StemmerFactory import StemmerFactory #import Indonesian St
 import re #import regular expression
 from stqdm import stqdm
 
+nltk.download(stopwords)
 stop_words = (stopwords.words('indonesian'))
 tok = WordPunctTokenizer()
 
