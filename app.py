@@ -44,7 +44,7 @@ def preprocessing(text):
     return ' '.join([slang[slang['before'] == word]['after'].values[0] if (slang["before"] == word).any() else word for word in text.split()])
 
 df_list = pd.read_excel('Hotel_List.xlsx')
-model = pickle.load(open('model1.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
 
 
 def main():
