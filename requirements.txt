@@ -1,15 +1,20 @@
 # packages in environment at C:\Users\willy\anaconda3\envs\PROGRAM:
 #
-# Name                    Version                   Build  Channel
-beautifulsoup4            4.11.1          py310haa95532_0
-bs4                       4.11.1               hd3eb1b0_0
-lxml                      4.8.0           py310h1985fb9_0
-nltk                      3.7                      pypi_0    pypi
-numpy                     1.22.4                   pypi_0    pypi
-pandas                    1.4.2                    pypi_0    pypi
-pip                       22.2.1                   pypi_0    pypi
-sastrawi                  1.0.1                    pypi_0    pypi
-scikit-learn              1.0.2           py310h4ed8f06_0
-seaborn                   0.11.2                   pypi_0    pypi
-stqdm                     0.0.4                    pypi_0    pypi
-tqdm                      4.64.0                   pypi_0    pypi
+beautifulsoup4=4.11.1=py310haa95532_0
+bs4=4.11.1=hd3eb1b0_0
+joblib=1.1.0=pyhd3eb1b0_0
+lxml=4.8.0=py310h1985fb9_0
+nltk=3.7=pypi_0
+numpy=1.22.4=pypi_0
+pandas=1.4.2=pypi_0
+pip=22.2.1=pypi_0
+python=3.10.4=hbb2ffb3_0
+requests=2.27.1=pyhd3eb1b0_0
+sastrawi=1.0.1=pypi_0
+scikit-learn=1.0.2=py310h4ed8f06_0
+scipy=1.8.1=pypi_0
+seaborn=0.11.2=pypi_0
+stqdm=0.0.4=pypi_0
+streamlit=1.11.1=pypi_0
+streamlit-aggrid=0.2.3.post2=pypi_0
+tqdm=4.64.0=pypi_0
