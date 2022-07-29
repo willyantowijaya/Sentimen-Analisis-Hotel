@@ -52,9 +52,8 @@ def main():
     nama_hotel = st.selectbox('Enter hotel name: ', df_list)
     if st.button('Search'):
         try:
-            nama_hotel = 'Meliá Bali'
             if nama_hotel:
-                url_split = df_list[df_list['nama']==nama_hotel]['link'].values[0].split('-')
+                url_split = df_list[df_list['nama']==nama_hotel]['link'].values[1].split('-')
                 pages = np.arange(1, 101, 5)
                 Name = []
                 Title = []
