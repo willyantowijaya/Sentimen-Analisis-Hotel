@@ -53,7 +53,7 @@ def main():
     if st.button('Search'):
         try:
             if nama_hotel:
-                url_split = df_list[df_list['nama']==nama_hotel]['link'].values[1].split('-')
+                url_split = df_list[df_list['nama']==nama_hotel]['link'].values[0].split('-')
                 pages = np.arange(1, 101, 5)
                 Name = []
                 Title = []
