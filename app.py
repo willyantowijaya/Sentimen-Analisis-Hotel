@@ -46,12 +46,7 @@ def preprocessing(text):
 df_list = pd.read_excel('Hotel_List.xlsx')
 model = pickle.load(open('model1.pkl', 'rb'))
 
-nama_hotel = 'sofitel'
 
-df_list = pd.DataFrame({'nama':['sofitel'],
-              'link':['https://www.tripadvisor.co.id/Hotel_Review-g297698-d5039960-Reviews-Sofitel_Bali_Nusa_Dua_Beach_Resort-Nusa_Dua_Nusa_Dua_Peninsula_Bali.html']})
-
-model = pickle.load(open('model.pkl', 'rb'))
 url_split = df_list[df_list['nama']==nama_hotel]['link'][0].split('-')
 
 def main():
