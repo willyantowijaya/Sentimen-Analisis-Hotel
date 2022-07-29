@@ -1,6 +1,6 @@
 # packages in environment at C:\Users\willy\anaconda3\envs\PROGRAM:
 #
-beautifulsoup4==4.11.1
+beautifulsoup==3.2.2
 joblib==1.1.0
 lxml==4.8.0
 nltk==3.7
