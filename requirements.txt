@@ -1,7 +1,6 @@
 # packages in environment at C:\Users\willy\anaconda3\envs\PROGRAM:
 #
 # Name                    Version                   Build  Channel
-altair                    4.2.0                    pypi_0    pypi
 argon2-cffi               21.3.0                   pypi_0    pypi
 argon2-cffi-bindings      21.2.0                   pypi_0    pypi
 asttokens                 2.0.5                    pypi_0    pypi
