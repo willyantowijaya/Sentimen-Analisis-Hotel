@@ -62,7 +62,7 @@ def main():
 
                 for page in stqdm(pages,desc="Scraping"):
                     url = '-'.join([url_split[0], url_split[1], url_split[2], url_split[3], f'or{page}', url_split[4], url_split[5]])    # import the Url details to Python
-                    req = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
+                    req = requests.get(url, headers={'User-Agent': 'Chrome/79.0.3945.88'})
                     html = req.content
                     # Put it in soup
                     # sleep(randint(1, 2))
