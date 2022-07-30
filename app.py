@@ -62,6 +62,7 @@ def main():
 
                 for page in stqdm(pages,desc="Scraping"):
                     url = '-'.join([url_split[0], url_split[1], url_split[2], url_split[3], f'or{page}', url_split[4], url_split[5]])    # import the Url details to Python
+                    headers["Connection"] = "keep-alive"
                     headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'}
                     req = requests.get(url, headers=headers)
                     html = req.content
